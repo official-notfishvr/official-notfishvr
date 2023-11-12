@@ -5,4 +5,6 @@
     <h3 style="margin: 10px 0;">Links:</h3>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/official-notfishvr" target="_blank">GitHub (official)</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/notfishvr69" target="_blank">GitHub (personal)</a></p>
+    <p style="margin: 5px 0; font-size: 16px;"><a href="https://www.youtube.com/@notfishvr" target="_blank">Youtube</a></p>
+    <p style="margin: 5px 0; font-size: 16px;"><a href="https://discord.gg/nikomods" target="_blank">Discord (4k Members)</a></p>
 </div>
