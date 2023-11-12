@@ -3,6 +3,6 @@
     <h3 style="margin:0;">Hi im notfishvr 👋</h3>
     <p style="margin:0;">im a 13 year old mostly self taught programmer. I am able to <br>write in multiple languages such as: C#, JS, HTML, CSS</p>
     <p style="margin:5;">Links:</p>
-    <p style="margin:5;">github: https://github.com/official-notfishvr</p>
-    <p style="margin:5;">github: https://github.com/notfishvr69</p>
+    <p style="margin:1;">github: https://github.com/official-notfishvr</p>
+    <p style="margin:1;">github: https://github.com/notfishvr69</p>
 </div>
