@@ -8,4 +8,5 @@
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/notfishvr6969" target="_blank">GitHub (personal)</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://www.youtube.com/@notfishvr" target="_blank">Youtube</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://discord.gg/nikomods" target="_blank">Discord (4k Members)</a></p>
+    <p style="margin: 5px 0; font-size: 16px;"><a href="https://cash.app/$notfishvr69" target="_blank">Cash App</a></p>
 </div>
