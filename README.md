@@ -25,7 +25,6 @@
 ## Links
 
 </div>
-    <h3 style="margin: 10px 0;">Links:</h3>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://notfishvr.dev" target="_blank">Website</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/official-notfishvr" target="_blank">GitHub (official)</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/notfishvr6969" target="_blank">GitHub (personal)</a></p>
