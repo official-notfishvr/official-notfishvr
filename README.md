@@ -28,7 +28,7 @@
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/official-notfishvr" target="_blank">GitHub (official)</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/notfishvr6969" target="_blank">GitHub (personal)</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://www.youtube.com/@notfishvr" target="_blank">Youtube</a></p>
-    <p style="margin: 5px 0; font-size: 16px;"><a href="https://cash.app/$notfishvr69" target="_blank">Cash App</a></p>
+    <p style="margin: 5px 0; font-size: 16px;"><a href="https://cash.app/$notfishvr69" target="_blank">Cash App [dont have any more]</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://notfishvr.dev" target="_blank">Website [Down]</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://discord.gg/U7vqnf4YKB" target="_blank">Discord [Quit]</a></p>
 </div>
