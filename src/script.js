@@ -181,6 +181,11 @@ function formatTopRepos(repos) {
     }));
 }
 
+const config = {
+  showPrivateLanguages: false,
+  showApiCards: false,
+};
+
 async function main() {
   try {
     const username = 'official-notfishvr';
@@ -207,11 +212,11 @@ async function main() {
       percentage_str: `${percentage.toFixed(2)}%`,
     }));
 
-    const displayPrivateLangs = languageStats.private.map(([lang, percentage]) => ({
+    const displayPrivateLangs = config.showPrivateLanguages ? languageStats.private.map(([lang, percentage]) => ({
       name: formatLangName(lang).padEnd(15),
       bar: renderProgressBar(percentage),
       percentage_str: `${percentage.toFixed(2)}%`,
-    }));
+    })) : [];
 
     const topRepos = formatTopRepos(userStats.repositories.nodes);
 
@@ -225,6 +230,8 @@ async function main() {
       public_languages: displayPublicLangs,
       private_languages: displayPrivateLangs,
       top_repos: topRepos,
+      show_private_languages: config.showPrivateLanguages,
+      show_api_cards: config.showApiCards,
       last_updated: `Last updated ${new Date().toISOString().split('T')[0]} UTC`,
     };
 
