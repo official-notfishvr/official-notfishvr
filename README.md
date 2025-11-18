@@ -4,32 +4,32 @@
   <p>self taught programmer & developer</p>
 </div>
 
-## GitHub Stats
+#### GitHub Stats
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=official-notfishvr&theme=highcontrast&show_icons=true" alt="Your GitHub Stats" />
+  <img width="400" src="https://github-readme-stats.vercel.app/api?username=official-notfishvr&theme=highcontrast&show_icons=true" alt="Your GitHub Stats" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=official-notfishvr&theme=highcontrast" alt="Your GitHub Contributions" />
+  <img width="400" src="https://github-readme-streak-stats.herokuapp.com/?user=official-notfishvr&theme=highcontrast" alt="Your GitHub Contributions" />
 </div>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=official-notfishvr&theme=highcontrast" alt="Your Top Languages" />
+  <img width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=official-notfishvr&theme=highcontrast" alt="Your Top Languages" />
 </div>
 
-## My Stats
+#### My Stats
 - **99** stars across repos
 - **1.5k** commits this year
 - **69** total pull requests
 - **40** total issues
 - **55** repos contributed to
 
-## Top Languages
+#### Top Languages
 
-### Public Repositories Languages
+#### Public Repositories Languages
 
 ```
-C#              ▓▓▓▓▓▓▓▓▓▓ 96.29%
-HTML            ░░░░░░░░░░ 1.40%
-JavaScript      ░░░░░░░░░░ 0.93%
+C#              ▓▓▓▓▓▓▓▓▓▓ 95.99%
+HTML            ░░░░░░░░░░ 1.39%
+JavaScript      ░░░░░░░░░░ 1.23%
 PHP             ░░░░░░░░░░ 0.58%
 TypeScript      ░░░░░░░░░░ 0.33%
 CSS             ░░░░░░░░░░ 0.20%
@@ -53,7 +53,7 @@ TypeScript      ░░░░░░░░░░ 0.50%
 
 </details>
 
-## Top Repositories
+#### Top Repositories
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 8
   - No description
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
@@ -65,7 +65,7 @@ TypeScript      ░░░░░░░░░░ 0.50%
 - **[Strayed-Hacks](https://github.com/official-notfishvr/Strayed-Hacks)** ⭐ 2
   - Strayed is like rust but in VR!
 
-## Links
+#### Links
 <div align="center">
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://github.com/official-notfishvr" target="_blank">GitHub</a></p>
     <p style="margin: 5px 0; font-size: 16px;"><a href="https://www.youtube.com/@notfishvr" target="_blank">Youtube</a></p>
