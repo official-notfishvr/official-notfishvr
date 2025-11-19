@@ -4,6 +4,7 @@ import fetch from 'node-fetch';
 import Handlebars from 'handlebars';
 
 async function queryUserStats(username, token) {
+  console.log('Starting queryUserStats for user:', username);
   const now = new Date();
   const beginningOfYear = new Date(now.getFullYear(), 0, 1);
   const endOfYear = new Date(now.getFullYear(), 11, 31, 23, 59, 59);
@@ -33,10 +34,11 @@ async function queryUserStats(username, token) {
     }
   `;
 
+  console.log('Sending GraphQL request...');
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${token}`,
+      'Authorization': `token ${token}`,
       'User-Agent': 'JavaScript GitHub README Generator',
       'Content-Type': 'application/json',
     },
@@ -50,13 +52,18 @@ async function queryUserStats(username, token) {
     }),
   });
 
+  console.log('Response received, status:', response.status);
   if (!response.ok) {
     throw new Error(`GitHub API returned non-success status: ${response.status}`);
   }
 
+  console.log('Parsing JSON...');
   const gqlResponse = await response.json();
+  console.log('GraphQL response received');
+  
   if (gqlResponse.errors) {
-    throw new Error('GraphQL query failed.');
+    console.error('GraphQL errors:', JSON.stringify(gqlResponse.errors, null, 2));
+    throw new Error('GraphQL query failed: ' + JSON.stringify(gqlResponse.errors));
   }
 
   if (!gqlResponse.data) {
@@ -157,7 +164,7 @@ function abbreviateNumber(n) {
 function renderProgressBar(percentage) {
   const numFilled = Math.max(0, Math.round(percentage / 10.0));
   const numEmpty = Math.max(0, 10 - numFilled);
-  return 'â–“'.repeat(numFilled) + 'â–‘'.repeat(numEmpty);
+  return '▓'.repeat(numFilled) + '░'.repeat(numEmpty);
 }
 
 function formatLangName(lang) {
@@ -194,6 +201,9 @@ async function main() {
     if (!token) {
       throw new Error('GH_PAT environment variable not set');
     }
+
+    console.log('Token present:', !!token);
+    console.log('Token length:', token.length);
 
     const userStats = await queryUserStats(username, token);
     const languageStats = await calculateLanguageStats(username, token);
