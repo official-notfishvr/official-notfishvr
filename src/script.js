@@ -36,7 +36,7 @@ async function queryUserStats(username, token) {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      'Authorization': `token ${token}`,
+      'Authorization': `Bearer ${token}`,
       'User-Agent': 'JavaScript GitHub README Generator',
       'Content-Type': 'application/json',
     },
@@ -157,7 +157,7 @@ function abbreviateNumber(n) {
 function renderProgressBar(percentage) {
   const numFilled = Math.max(0, Math.round(percentage / 10.0));
   const numEmpty = Math.max(0, 10 - numFilled);
-  return '▓'.repeat(numFilled) + '░'.repeat(numEmpty);
+  return 'â–“'.repeat(numFilled) + 'â–‘'.repeat(numEmpty);
 }
 
 function formatLangName(lang) {
@@ -194,10 +194,6 @@ async function main() {
     if (!token) {
       throw new Error('GH_PAT environment variable not set');
     }
-
-    console.log('Token present:', !!token);
-    console.log('Token length:', token.length);
-    console.log('Token starts with:', token.substring(0, 10) + '...');
 
     const userStats = await queryUserStats(username, token);
     const languageStats = await calculateLanguageStats(username, token);
