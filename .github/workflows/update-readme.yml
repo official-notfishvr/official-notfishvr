@@ -25,7 +25,7 @@ jobs:
         run: cd src && npm install
       - name: Run the Node.js program
         env:
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: cd src && node script.js
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v6
