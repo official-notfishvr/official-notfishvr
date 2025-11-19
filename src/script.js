@@ -36,7 +36,7 @@ async function queryUserStats(username, token) {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${token}`,
+      'Authorization': `token ${token}`,
       'User-Agent': 'JavaScript GitHub README Generator',
       'Content-Type': 'application/json',
     },
