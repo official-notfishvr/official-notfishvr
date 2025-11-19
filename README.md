@@ -8,17 +8,17 @@
 #### My Stats
 - **99** stars across repos
 - **1.5k** commits this year
-- **69** total pull requests
+- **70** total pull requests
 - **40** total issues
 - **55** repos contributed to
 
 #### Top Languages
 
 ```
-C#              ▓▓▓▓▓▓▓▓▓▓ 95.99%
-HTML            ░░░░░░░░░░ 1.39%
-JavaScript      ░░░░░░░░░░ 1.23%
-PHP             ░░░░░░░░░░ 0.58%
+C#              ▓▓▓▓▓▓▓▓▓▓ 96.00%
+HTML            ░░░░░░░░░░ 1.38%
+JavaScript      ░░░░░░░░░░ 1.25%
+PHP             ░░░░░░░░░░ 0.57%
 TypeScript      ░░░░░░░░░░ 0.33%
 CSS             ░░░░░░░░░░ 0.20%
 Python          ░░░░░░░░░░ 0.09%
@@ -28,15 +28,15 @@ PowerShell      ░░░░░░░░░░ 0.09%
 
 #### Top Repositories
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 8
-  - No description
+  - a UnityEngine GUI lib for C# modding using mod loaders
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
   - No description
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 5
   - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
 - **[neal.fun-cheats](https://github.com/official-notfishvr/neal.fun-cheats)** ⭐ 3
   - it auto craft stuff for infinite craft
-- **[Strayed-Hacks](https://github.com/official-notfishvr/Strayed-Hacks)** ⭐ 2
-  - Strayed is like rust but in VR!
+- **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 2
+  - No description
 
 #### Links
 <div align="center">
@@ -48,4 +48,4 @@ PowerShell      ░░░░░░░░░░ 0.09%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-11-18 UTC_
+_Last updated 2025-11-19 UTC_
