@@ -195,6 +195,10 @@ async function main() {
       throw new Error('GH_PAT environment variable not set');
     }
 
+    console.log('Token present:', !!token);
+    console.log('Token length:', token.length);
+    console.log('Token starts with:', token.substring(0, 10) + '...');
+
     const userStats = await queryUserStats(username, token);
     const languageStats = await calculateLanguageStats(username, token);
 
