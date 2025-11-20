@@ -15,14 +15,14 @@
 #### Top Languages
 
 ```
-C#              ▓▓▓▓▓▓▓▓▓▓ 96.00%
+C#              ▓▓▓▓▓▓▓▓▓▓ 96.07%
 HTML            ░░░░░░░░░░ 1.38%
 JavaScript      ░░░░░░░░░░ 1.25%
-PHP             ░░░░░░░░░░ 0.57%
+PHP             ░░░░░░░░░░ 0.58%
 TypeScript      ░░░░░░░░░░ 0.33%
 CSS             ░░░░░░░░░░ 0.20%
 Python          ░░░░░░░░░░ 0.09%
-PowerShell      ░░░░░░░░░░ 0.09%
+Batchfile       ░░░░░░░░░░ 0.08%
 ```
 
 
@@ -30,10 +30,10 @@ PowerShell      ░░░░░░░░░░ 0.09%
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 8
   - a UnityEngine GUI lib for C# modding using mod loaders
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
-  - No description
+  - my profile that auto updates
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 5
   - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
-- **[neal.fun-cheats](https://github.com/official-notfishvr/neal.fun-cheats)** ⭐ 3
+- **[neal.fun-mods](https://github.com/official-notfishvr/neal.fun-mods)** ⭐ 3
   - it auto craft stuff for infinite craft
 - **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 2
   - No description
@@ -48,4 +48,4 @@ PowerShell      ░░░░░░░░░░ 0.09%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-11-19 UTC_
+_Last updated 2025-11-20 UTC_
