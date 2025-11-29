@@ -6,19 +6,19 @@
 
 
 #### My Stats
-- **101** stars across repos
+- **102** stars across repos
 - **1.6k** commits this year
-- **73** total pull requests
+- **75** total pull requests
 - **40** total issues
-- **53** repos contributed to
+- **54** repos contributed to
 
 #### Top Languages
 
 ```
-C#              ▓▓▓▓▓▓▓▓▓▓ 96.07%
-HTML            ░░░░░░░░░░ 1.38%
-JavaScript      ░░░░░░░░░░ 1.25%
-PHP             ░░░░░░░░░░ 0.58%
+C#              ▓▓▓▓▓▓▓▓▓▓ 96.12%
+HTML            ░░░░░░░░░░ 1.36%
+JavaScript      ░░░░░░░░░░ 1.24%
+PHP             ░░░░░░░░░░ 0.57%
 TypeScript      ░░░░░░░░░░ 0.33%
 CSS             ░░░░░░░░░░ 0.20%
 Python          ░░░░░░░░░░ 0.09%
@@ -27,7 +27,7 @@ Batchfile       ░░░░░░░░░░ 0.08%
 
 
 #### Top Repositories
-- **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 8
+- **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 9
   - a UnityEngine GUI lib for C# modding using mod loaders
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
   - my profile that auto updates
@@ -48,4 +48,4 @@ Batchfile       ░░░░░░░░░░ 0.08%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-11-28 UTC_
+_Last updated 2025-11-29 UTC_
