@@ -6,7 +6,7 @@
 
 
 #### My Stats
-- **102** stars across repos
+- **103** stars across repos
 - **1.6k** commits this year
 - **75** total pull requests
 - **41** total issues
@@ -35,7 +35,7 @@ Batchfile       ░░░░░░░░░░ 0.08%
   - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
 - **[neal.fun-mods](https://github.com/official-notfishvr/neal.fun-mods)** ⭐ 3
   - it auto craft stuff for infinite craft
-- **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 2
+- **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 3
   - No description
 
 #### Links
@@ -48,4 +48,4 @@ Batchfile       ░░░░░░░░░░ 0.08%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-12-03 UTC_
+_Last updated 2025-12-04 UTC_
