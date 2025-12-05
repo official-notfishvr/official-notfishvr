@@ -6,10 +6,10 @@
 
 
 #### My Stats
-- **103** stars across repos
+- **104** stars across repos
 - **1.6k** commits this year
 - **75** total pull requests
-- **41** total issues
+- **42** total issues
 - **55** repos contributed to
 
 #### Top Languages
@@ -33,10 +33,10 @@ Batchfile       ░░░░░░░░░░ 0.08%
   - my profile that auto updates
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 5
   - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
+- **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 4
+  - No description
 - **[neal.fun-mods](https://github.com/official-notfishvr/neal.fun-mods)** ⭐ 3
   - it auto craft stuff for infinite craft
-- **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 3
-  - No description
 
 #### Links
 <div align="center">
@@ -48,4 +48,4 @@ Batchfile       ░░░░░░░░░░ 0.08%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-12-04 UTC_
+_Last updated 2025-12-05 UTC_
