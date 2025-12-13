@@ -6,11 +6,11 @@
 
 
 #### My Stats
-- **105** stars across repos
+- **108** stars across repos
 - **1.7k** commits this year
 - **76** total pull requests
-- **45** total issues
-- **58** repos contributed to
+- **46** total issues
+- **59** repos contributed to
 
 #### Top Languages
 
@@ -29,10 +29,10 @@ Batchfile       ░░░░░░░░░░ 0.07%
 #### Top Repositories
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 9
   - a UnityEngine GUI lib for C# modding using mod loaders
+- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 6
+  - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
   - my profile that auto updates
-- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 5
-  - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
 - **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 4
   - No description
 - **[neal.fun-mods](https://github.com/official-notfishvr/neal.fun-mods)** ⭐ 3
@@ -48,4 +48,4 @@ Batchfile       ░░░░░░░░░░ 0.07%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-12-12 UTC_
+_Last updated 2025-12-13 UTC_
