@@ -15,12 +15,12 @@
 #### Top Languages
 
 ```
-C#              ▓▓▓▓▓▓▓▓▓░ 93.40%
-JavaScript      ░░░░░░░░░░ 2.29%
-TypeScript      ░░░░░░░░░░ 1.68%
-HTML            ░░░░░░░░░░ 1.29%
-CSS             ░░░░░░░░░░ 0.61%
-PHP             ░░░░░░░░░░ 0.54%
+C#              ▓▓▓▓▓▓▓▓▓░ 93.47%
+JavaScript      ░░░░░░░░░░ 2.27%
+TypeScript      ░░░░░░░░░░ 1.67%
+HTML            ░░░░░░░░░░ 1.28%
+CSS             ░░░░░░░░░░ 0.60%
+PHP             ░░░░░░░░░░ 0.53%
 Python          ░░░░░░░░░░ 0.09%
 Batchfile       ░░░░░░░░░░ 0.07%
 ```
@@ -48,4 +48,4 @@ Batchfile       ░░░░░░░░░░ 0.07%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-12-15 UTC_
+_Last updated 2025-12-16 UTC_
