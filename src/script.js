@@ -92,9 +92,17 @@ async function getLanguagesFromTree(owner, repo, token, excludePath = null) {
 
     const languages = {};
     const ext = require('path').extname;
+    const excludePaths = Array.isArray(excludePath) ? excludePath : (excludePath ? [excludePath] : []);
 
     for (const item of treeData.tree || []) {
-      if (excludePath && (item.path.startsWith(excludePath + '/') || item.path === excludePath)) {
+      let shouldExclude = false;
+      for (const exclude of excludePaths) {
+        if (item.path.startsWith(exclude + '/') || item.path === exclude) {
+          shouldExclude = true;
+          break;
+        }
+      }
+      if (shouldExclude) {
         continue;
       }
 
@@ -162,12 +170,19 @@ async function fetchLanguagesForRepos(repos, token) {
         if (topics.includes('mirror') || topics.includes('no-stats')) {
           return false;
         }
+        if (repo.name === 'xenon-cheats-universalx' || repo.name === 'xenon-cheats' || repo.name === 'MelonLoader') {
+          return false;
+        }
         return true;
       })
       .map(async (repo) => {
         try {
           if (repo.name === 'oar-internal') {
             return await getLanguagesFromTree('official-notfishvr', 'oar-internal', token, 'OARDump');
+          }
+
+          if (repo.name === 'Meta-Horizon-Cheats') {
+            return await getLanguagesFromTree('official-notfishvr', 'Meta-Horizon-Cheats', token, ['MelonLoader', 'xenon-cheats', 'xenon-cheats-universalx']);
           }
 
           const response = await fetch(repo.languages_url, {
