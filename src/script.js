@@ -224,15 +224,11 @@ async function calculateLanguageStats(username, token) {
     page++;
   }
 
-  const publicRepos = allRepos.filter((repo) => !repo.private);
-  const privateRepos = allRepos.filter((repo) => repo.private);
-
-  const publicLanguages = await fetchLanguagesForRepos(publicRepos, token);
-  const privateLanguages = await fetchLanguagesForRepos(privateRepos, token);
+  const allLanguages = await fetchLanguagesForRepos(allRepos, token);
 
   return {
-    public: publicLanguages,
-    private: privateLanguages,
+    public: allLanguages,
+    private: [],
   };
 }
 
