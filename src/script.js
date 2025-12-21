@@ -4,7 +4,6 @@ import fetch from 'node-fetch';
 import Handlebars from 'handlebars';
 
 async function queryUserStats(username, token) {
-  console.log('Starting queryUserStats for user:', username);
   const now = new Date();
   const beginningOfYear = new Date(now.getFullYear(), 0, 1);
   const endOfYear = new Date(now.getFullYear(), 11, 31, 23, 59, 59);
@@ -34,7 +33,6 @@ async function queryUserStats(username, token) {
     }
   `;
 
-  console.log('Sending GraphQL request...');
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
@@ -52,14 +50,11 @@ async function queryUserStats(username, token) {
     }),
   });
 
-  console.log('Response received, status:', response.status);
   if (!response.ok) {
     throw new Error(`GitHub API returned non-success status: ${response.status}`);
   }
 
-  console.log('Parsing JSON...');
   const gqlResponse = await response.json();
-  console.log('GraphQL response received');
   
   if (gqlResponse.errors) {
     console.error('GraphQL errors:', JSON.stringify(gqlResponse.errors, null, 2));
@@ -71,6 +66,89 @@ async function queryUserStats(username, token) {
   }
 
   return gqlResponse.data.user;
+}
+
+async function getLanguagesFromTree(owner, repo, token, excludePath = null) {
+  try {
+    const repoResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'User-Agent': 'JavaScript GitHub README Generator',
+      },
+    });
+    const repoData = await repoResponse.json();
+    const branch = repoData.default_branch;
+
+    const treeResponse = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`,
+      {
+        headers: {
+          'Authorization': `token ${token}`,
+          'User-Agent': 'JavaScript GitHub README Generator',
+        },
+      }
+    );
+    const treeData = await treeResponse.json();
+
+    const languages = {};
+    const ext = require('path').extname;
+
+    for (const item of treeData.tree || []) {
+      if (excludePath && (item.path.startsWith(excludePath + '/') || item.path === excludePath)) {
+        continue;
+      }
+
+      if (item.type === 'blob') {
+        const fileResponse = await fetch(item.url, {
+          headers: {
+            'Authorization': `token ${token}`,
+            'User-Agent': 'JavaScript GitHub README Generator',
+          },
+        });
+        const fileData = await fileResponse.json();
+        const size = fileData.size || 0;
+
+        const filename = item.path.split('/').pop();
+        const extension = ext(filename);
+        
+        if (extension && size > 0) {
+          const langMap = {
+            '.js': 'JavaScript',
+            '.ts': 'TypeScript',
+            '.py': 'Python',
+            '.java': 'Java',
+            '.cpp': 'C++',
+            '.c': 'C',
+            '.cs': 'C#',
+            '.rb': 'Ruby',
+            '.go': 'Go',
+            '.rs': 'Rust',
+            '.php': 'PHP',
+            '.swift': 'Swift',
+            '.kt': 'Kotlin',
+            '.scala': 'Scala',
+            '.r': 'R',
+            '.m': 'Objective-C',
+            '.jsx': 'JavaScript',
+            '.tsx': 'TypeScript',
+            '.vue': 'Vue',
+            '.html': 'HTML',
+            '.css': 'CSS',
+            '.scss': 'SCSS',
+            '.less': 'Less',
+          };
+          
+          const lang = langMap[extension] || extension.substring(1).toUpperCase();
+          languages[lang] = (languages[lang] || 0) + size;
+        }
+      }
+    }
+
+    return languages;
+  } catch (error) {
+    console.error(`Error getting languages for ${owner}/${repo}:`, error.message);
+    return {};
+  }
 }
 
 async function fetchLanguagesForRepos(repos, token) {
@@ -88,44 +166,17 @@ async function fetchLanguagesForRepos(repos, token) {
       })
       .map(async (repo) => {
         try {
-          let response = await fetch(repo.languages_url, {
+          if (repo.name === 'oar-internal') {
+            return await getLanguagesFromTree('official-notfishvr', 'oar-internal', token, 'OARDump');
+          }
+
+          const response = await fetch(repo.languages_url, {
             headers: {
               'Authorization': `token ${token}`,
               'User-Agent': 'JavaScript GitHub README Generator',
             },
           });
-          let languages = await response.json();
-
-          if (repo.name === 'oar-internal') {
-            const dumpResponse = await fetch(
-              `https://api.github.com/repos/${repo.owner.login}/oar-internal/contents/OARDump`,
-              {
-                headers: {
-                  'Authorization': `token ${token}`,
-                  'User-Agent': 'JavaScript GitHub README Generator',
-                },
-              }
-            );
-
-            if (dumpResponse.ok) {
-              const dumpContents = await dumpResponse.json();
-              if (Array.isArray(dumpContents)) {
-                for (const item of dumpContents) {
-                  if (item.type === 'file') {
-                    const fileResponse = await fetch(item.url, {
-                      headers: {
-                        'Authorization': `token ${token}`,
-                        'User-Agent': 'JavaScript GitHub README Generator',
-                      },
-                    });
-                    const fileData = await fileResponse.json();
-                  }
-                }
-              }
-            }
-          }
-
-          return languages;
+          return await response.json();
         } catch {
           return {};
         }
@@ -238,9 +289,6 @@ async function main() {
     if (!token) {
       throw new Error('GH_PAT environment variable not set');
     }
-
-    console.log('Token present:', !!token);
-    console.log('Token length:', token.length);
 
     const userStats = await queryUserStats(username, token);
     const languageStats = await calculateLanguageStats(username, token);
