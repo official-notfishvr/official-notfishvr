@@ -7,36 +7,36 @@
 
 #### My Stats
 - **109** stars across repos
-- **1.7k** commits this year
-- **76** total pull requests
+- **554** commits this year
+- **66** total pull requests
 - **46** total issues
-- **59** repos contributed to
+- **32** repos contributed to
 
 #### Top Languages
 
 ```
-C#              ▓▓▓▓▓▓▓▓▓░ 93.98%
-JavaScript      ░░░░░░░░░░ 2.09%
-TypeScript      ░░░░░░░░░░ 1.54%
-HTML            ░░░░░░░░░░ 1.18%
-CSS             ░░░░░░░░░░ 0.56%
-PHP             ░░░░░░░░░░ 0.49%
-Python          ░░░░░░░░░░ 0.08%
-Batchfile       ░░░░░░░░░░ 0.07%
+C++             ▓▓▓▓▓▓▓▓▓░ 93.96%
+C#              ▓░░░░░░░░░ 5.68%
+JavaScript      ░░░░░░░░░░ 0.13%
+TypeScript      ░░░░░░░░░░ 0.09%
+HTML            ░░░░░░░░░░ 0.07%
+CSS             ░░░░░░░░░░ 0.03%
+PHP             ░░░░░░░░░░ 0.03%
+Python          ░░░░░░░░░░ 0.00%
 ```
 
 
 #### Top Repositories
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 9
   - a UnityEngine GUI lib for C# modding using mod loaders
-- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 6
-  - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
   - my profile that auto updates
 - **[Mimesis-Mod-Menu](https://github.com/official-notfishvr/Mimesis-Mod-Menu)** ⭐ 4
   - No description
 - **[neal.fun-mods](https://github.com/official-notfishvr/neal.fun-mods)** ⭐ 3
   - it auto craft stuff for infinite craft
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 2
+  - No description
 
 #### Links
 <div align="center">
@@ -48,4 +48,4 @@ Batchfile       ░░░░░░░░░░ 0.07%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2025-12-19 UTC_
+_Last updated 2025-12-21 UTC_
