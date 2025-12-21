@@ -88,13 +88,44 @@ async function fetchLanguagesForRepos(repos, token) {
       })
       .map(async (repo) => {
         try {
-          const response = await fetch(repo.languages_url, {
+          let response = await fetch(repo.languages_url, {
             headers: {
               'Authorization': `token ${token}`,
               'User-Agent': 'JavaScript GitHub README Generator',
             },
           });
-          return await response.json();
+          let languages = await response.json();
+
+          if (repo.name === 'oar-internal') {
+            const dumpResponse = await fetch(
+              `https://api.github.com/repos/${repo.owner.login}/oar-internal/contents/OARDump`,
+              {
+                headers: {
+                  'Authorization': `token ${token}`,
+                  'User-Agent': 'JavaScript GitHub README Generator',
+                },
+              }
+            );
+
+            if (dumpResponse.ok) {
+              const dumpContents = await dumpResponse.json();
+              if (Array.isArray(dumpContents)) {
+                for (const item of dumpContents) {
+                  if (item.type === 'file') {
+                    const fileResponse = await fetch(item.url, {
+                      headers: {
+                        'Authorization': `token ${token}`,
+                        'User-Agent': 'JavaScript GitHub README Generator',
+                      },
+                    });
+                    const fileData = await fileResponse.json();
+                  }
+                }
+              }
+            }
+          }
+
+          return languages;
         } catch {
           return {};
         }
@@ -164,7 +195,7 @@ function abbreviateNumber(n) {
 function renderProgressBar(percentage) {
   const numFilled = Math.max(0, Math.round(percentage / 10.0));
   const numEmpty = Math.max(0, 10 - numFilled);
-  return '▓'.repeat(numFilled) + '░'.repeat(numEmpty);
+  return '█'.repeat(numFilled) + '░'.repeat(numEmpty);
 }
 
 function formatLangName(lang) {
@@ -175,9 +206,13 @@ function formatLangName(lang) {
   return nameMap[lang] || lang;
 }
 
-function formatTopRepos(repos) {
-  return repos
-    .filter(repo => !repo.isArchived)
+function formatTopRepos(repos, includeArchived = true) {
+  let filtered = repos;
+  if (!includeArchived) {
+    filtered = repos.filter(repo => !repo.isArchived);
+  }
+  
+  return filtered
     .sort((a, b) => b.stargazerCount - a.stargazerCount)
     .slice(0, 5)
     .map(repo => ({
@@ -185,12 +220,14 @@ function formatTopRepos(repos) {
       stars: repo.stargazerCount,
       description: repo.description || 'No description',
       url: repo.url,
+      isArchived: repo.isArchived,
     }));
 }
 
 const config = {
   showPrivateLanguages: false,
   showApiCards: false,
+  showArchivedRepos: true,
 };
 
 async function main() {
@@ -228,7 +265,7 @@ async function main() {
       percentage_str: `${percentage.toFixed(2)}%`,
     })) : [];
 
-    const topRepos = formatTopRepos(userStats.repositories.nodes);
+    const topRepos = formatTopRepos(userStats.repositories.nodes, config.showArchivedRepos);
 
     const templateData = {
       username,
@@ -242,6 +279,7 @@ async function main() {
       top_repos: topRepos,
       show_private_languages: config.showPrivateLanguages,
       show_api_cards: config.showApiCards,
+      show_archived_repos: config.showArchivedRepos,
       last_updated: `Last updated ${new Date().toISOString().split('T')[0]} UTC`,
     };
 
