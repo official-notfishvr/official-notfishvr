@@ -6,18 +6,18 @@
 
 
 #### My Stats
-- **117** stars across repos
-- **119** commits this year
-- **73** total pull requests
+- **118** stars across repos
+- **125** commits this year
+- **75** total pull requests
 - **47** total issues
 - **35** repos contributed to
 
 #### Top Languages
 
 ```
-C#              ███████░░░ 70.30%
-C++             ███░░░░░░░ 25.23%
-Java            ░░░░░░░░░░ 2.09%
+C#              ███████░░░ 70.18%
+C++             ███░░░░░░░ 25.33%
+Java            ░░░░░░░░░░ 2.10%
 JavaScript      ░░░░░░░░░░ 0.84%
 TypeScript      ░░░░░░░░░░ 0.56%
 HTML            ░░░░░░░░░░ 0.45%
@@ -31,7 +31,7 @@ PHP             ░░░░░░░░░░ 0.19%
   - This Is Lethal Company Mod Menu
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
-- **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 9
+- **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 10
   - a UnityEngine GUI lib for C# modding using mod loaders
 - **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 7
   - No description
@@ -48,4 +48,4 @@ PHP             ░░░░░░░░░░ 0.19%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-01-20 UTC_
+_Last updated 2026-01-21 UTC_
