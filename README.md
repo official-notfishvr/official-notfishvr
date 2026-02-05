@@ -6,8 +6,8 @@
 
 
 #### My Stats
-- **119** stars across repos
-- **121** commits this year
+- **120** stars across repos
+- **122** commits this year
 - **80** total pull requests
 - **50** total issues
 - **41** repos contributed to
@@ -33,7 +33,7 @@ PHP             ░░░░░░░░░░ 0.21%
   - This Is A BepInEx Mod Installer For Lethal Company
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 10
   - a UnityEngine GUI lib for C# modding using mod loaders
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 7
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 8
   - No description
 - **[official-notfishvr](https://github.com/official-notfishvr/official-notfishvr)** ⭐ 5
   - my profile that auto updates
@@ -48,4 +48,4 @@ PHP             ░░░░░░░░░░ 0.21%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-02-04 UTC_
+_Last updated 2026-02-05 UTC_
