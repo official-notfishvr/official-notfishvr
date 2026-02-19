@@ -6,10 +6,10 @@
 
 
 #### My Stats
-- **127** stars across repos
-- **169** commits this year
+- **128** stars across repos
+- **170** commits this year
 - **83** total pull requests
-- **51** total issues
+- **52** total issues
 - **44** repos contributed to
 
 #### Top Languages
@@ -33,7 +33,7 @@ CSS             ░░░░░░░░░░ 0.28%
   - This Is A BepInEx Mod Installer For Lethal Company
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 11
   - a UnityEngine GUI lib for C# modding using mod loaders
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 10
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 11
   - No description
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 6
   - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.28%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-02-18 UTC_
+_Last updated 2026-02-19 UTC_
