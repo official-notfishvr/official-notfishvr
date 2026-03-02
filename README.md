@@ -6,11 +6,11 @@
 
 
 #### My Stats
-- **129** stars across repos
-- **253** commits this year
+- **130** stars across repos
+- **256** commits this year
 - **84** total pull requests
 - **52** total issues
-- **45** repos contributed to
+- **46** repos contributed to
 
 #### Top Languages
 
@@ -31,7 +31,7 @@ Kotlin          ░░░░░░░░░░ 0.75%
   - This Is Lethal Company Mod Menu
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 12
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 13
   - No description
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 11
   - a UnityEngine GUI lib for C# modding using mod loaders
@@ -48,4 +48,4 @@ Kotlin          ░░░░░░░░░░ 0.75%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-03-01 UTC_
+_Last updated 2026-03-02 UTC_
