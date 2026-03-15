@@ -7,22 +7,22 @@
 
 #### My Stats
 - **130** stars across repos
-- **336** commits this year
-- **85** total pull requests
+- **340** commits this year
+- **87** total pull requests
 - **53** total issues
-- **47** repos contributed to
+- **49** repos contributed to
 
 #### Top Languages
 
 ```
-C#              ████████░░ 82.59%
-Java            █░░░░░░░░░ 6.04%
-TypeScript      █░░░░░░░░░ 5.83%
-Kotlin          ░░░░░░░░░░ 1.91%
+C#              ████████░░ 82.30%
+TypeScript      █░░░░░░░░░ 6.13%
+Java            █░░░░░░░░░ 6.02%
+Kotlin          ░░░░░░░░░░ 1.90%
 JavaScript      ░░░░░░░░░░ 1.05%
 C++             ░░░░░░░░░░ 0.70%
 HTML            ░░░░░░░░░░ 0.61%
-CSS             ░░░░░░░░░░ 0.44%
+CSS             ░░░░░░░░░░ 0.47%
 ```
 
 
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.44%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-03-14 UTC_
+_Last updated 2026-03-15 UTC_
