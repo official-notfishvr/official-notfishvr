@@ -7,7 +7,7 @@
 
 #### My Stats
 - **131** stars across repos
-- **409** commits this year
+- **422** commits this year
 - **88** total pull requests
 - **54** total issues
 - **48** repos contributed to
@@ -15,14 +15,14 @@
 #### Top Languages
 
 ```
-C#              ████████░░ 82.55%
-Java            █░░░░░░░░░ 6.05%
-TypeScript      █░░░░░░░░░ 5.94%
-Kotlin          ░░░░░░░░░░ 1.76%
-JavaScript      ░░░░░░░░░░ 1.28%
-C++             ░░░░░░░░░░ 0.65%
-HTML            ░░░░░░░░░░ 0.57%
-CSS             ░░░░░░░░░░ 0.42%
+C#              ████████░░ 81.81%
+Java            █░░░░░░░░░ 6.31%
+TypeScript      █░░░░░░░░░ 6.20%
+Kotlin          ░░░░░░░░░░ 1.84%
+JavaScript      ░░░░░░░░░░ 1.34%
+C++             ░░░░░░░░░░ 0.68%
+HTML            ░░░░░░░░░░ 0.60%
+CSS             ░░░░░░░░░░ 0.44%
 ```
 
 
@@ -36,7 +36,7 @@ CSS             ░░░░░░░░░░ 0.42%
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 11
   - a UnityEngine GUI lib for C# modding using mod loaders
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 6
-  - Fish Tools has alot of tools you can use such as Anti Dump, Double Counter Bypass and more
+  - moved to https://github.com/official-notfishvr/Fish-Tools-Remade
 
 #### Links
 <div align="center">
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.42%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-03-30 UTC_
+_Last updated 2026-03-31 UTC_
