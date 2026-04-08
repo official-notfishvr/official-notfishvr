@@ -6,8 +6,8 @@
 
 
 #### My Stats
-- **131** stars across repos
-- **443** commits this year
+- **132** stars across repos
+- **448** commits this year
 - **89** total pull requests
 - **55** total issues
 - **49** repos contributed to
@@ -15,24 +15,24 @@
 #### Top Languages
 
 ```
-C#              ████████░░ 81.93%
-Java            █░░░░░░░░░ 6.27%
-TypeScript      █░░░░░░░░░ 6.17%
-Kotlin          ░░░░░░░░░░ 1.81%
-JavaScript      ░░░░░░░░░░ 1.32%
-C++             ░░░░░░░░░░ 0.71%
-HTML            ░░░░░░░░░░ 0.59%
-CSS             ░░░░░░░░░░ 0.43%
+C#              ████████░░ 82.16%
+Java            █░░░░░░░░░ 6.19%
+TypeScript      █░░░░░░░░░ 6.09%
+Kotlin          ░░░░░░░░░░ 1.79%
+JavaScript      ░░░░░░░░░░ 1.30%
+C++             ░░░░░░░░░░ 0.70%
+HTML            ░░░░░░░░░░ 0.58%
+CSS             ░░░░░░░░░░ 0.42%
 ```
 
 
 #### Top Repositories
 - **[Fish-Lethal-Company-Menu](https://github.com/official-notfishvr/Fish-Lethal-Company-Menu)** ⭐ 39
   - This Is Lethal Company Mod Menu
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 14
+  - No description
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 13
-  - No description
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 11
   - a UnityEngine GUI lib for C# modding using mod loaders
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 6
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.43%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-04-07 UTC_
+_Last updated 2026-04-08 UTC_
