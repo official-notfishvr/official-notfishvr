@@ -6,10 +6,10 @@
 
 
 #### My Stats
-- **132** stars across repos
-- **551** commits this year
+- **134** stars across repos
+- **558** commits this year
 - **92** total pull requests
-- **55** total issues
+- **56** total issues
 - **51** repos contributed to
 
 #### Top Languages
@@ -29,13 +29,13 @@ CSS             ░░░░░░░░░░ 0.52%
 #### Top Repositories
 - **[Fish-Lethal-Company-Menu](https://github.com/official-notfishvr/Fish-Lethal-Company-Menu)** ⭐ 39
   - This Is Lethal Company Mod Menu
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 14
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 15
   - No description
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 11
   - a UnityEngine GUI lib for C# modding using mod loaders
-- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 6
+- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 7
   - moved to https://github.com/official-notfishvr/Fish-Tools-Remade
 
 #### Links
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.52%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-04-15 UTC_
+_Last updated 2026-04-16 UTC_
