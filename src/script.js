@@ -170,7 +170,7 @@ async function fetchLanguagesForRepos(repos, token) {
         if (topics.includes('mirror') || topics.includes('no-stats')) {
           return false;
         }
-        if (repo.name === 'xenon-cheats-universalx' || repo.name === 'xenon-cheats' || repo.name === 'MelonLoader') {
+        if (repo.name === 'xenon-cheats-universalx' || repo.name === 'xenon-cheats' || repo.name === 'MelonLoader' || repo.name === 'Idk-bro') {
           return false;
         }
         return true;
