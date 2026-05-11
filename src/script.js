@@ -296,9 +296,20 @@ async function fetchTopReposByLanguage(username, token) {
     page++;
   }
 
+  const excludedRepos = new Set([
+    'oar-internal',
+    'oar-internal-Installer',
+    'Meta-Horizon-Cheats',
+    'xenon-cheats-universalx',
+    'xenon-cheats',
+    'MelonLoader',
+    'Idk-bro',
+  ]);
+
   const byLanguage = {};
   for (const repo of allRepos) {
     if (repo.fork) continue;
+    if (excludedRepos.has(repo.name)) continue;
     const lang = repo.language || 'Unknown';
     if (!byLanguage[lang]) byLanguage[lang] = [];
     byLanguage[lang].push(repo);
