@@ -159,20 +159,24 @@ async function getLanguagesFromTree(owner, repo, token, excludePath = null) {
   }
 }
 
+const EXCLUDED_REPOS = new Set([
+  'oar-internal',
+  'oar-internal-Installer',
+  'Meta-Horizon-Cheats',
+  'xenon-cheats-universalx',
+  'xenon-cheats',
+  'MelonLoader',
+  'Idk-bro',
+]);
+
 async function fetchLanguagesForRepos(repos, token) {
   const langMaps = await Promise.all(
     repos
       .filter((repo) => {
-        if (repo.fork) {
-          return false;
-        }
+        if (repo.fork) return false;
         const topics = repo.topics || [];
-        if (topics.includes('mirror') || topics.includes('no-stats')) {
-          return false;
-        }
-        if (repo.name === 'xenon-cheats-universalx' || repo.name === 'xenon-cheats' || repo.name === 'MelonLoader' || repo.name === 'Idk-bro') {
-          return false;
-        }
+        if (topics.includes('mirror') || topics.includes('no-stats')) return false;
+        if (EXCLUDED_REPOS.has(repo.name)) return false;
         return true;
       })
       .map(async (repo) => {
@@ -283,7 +287,7 @@ async function fetchTopReposByLanguage(username, token) {
   let page = 1;
 
   while (true) {
-    const url = `https://api.github.com/users/${username}/repos?type=owner&per_page=100&page=${page}`;
+    const url = `https://api.github.com/user/repos?type=all&per_page=100&page=${page}`;
     const response = await fetch(url, {
       headers: {
         'Authorization': `token ${token}`,
@@ -296,20 +300,10 @@ async function fetchTopReposByLanguage(username, token) {
     page++;
   }
 
-  const excludedRepos = new Set([
-    'oar-internal',
-    'oar-internal-Installer',
-    'Meta-Horizon-Cheats',
-    'xenon-cheats-universalx',
-    'xenon-cheats',
-    'MelonLoader',
-    'Idk-bro',
-  ]);
-
   const byLanguage = {};
   for (const repo of allRepos) {
     if (repo.fork) continue;
-    if (excludedRepos.has(repo.name)) continue;
+    if (EXCLUDED_REPOS.has(repo.name)) continue;
     const lang = repo.language || 'Unknown';
     if (!byLanguage[lang]) byLanguage[lang] = [];
     byLanguage[lang].push(repo);
