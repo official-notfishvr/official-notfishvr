@@ -1,6 +1,5 @@
 // copyed form https://github.com/ptrpaws lol
 import fs from 'fs';
-import path from 'path';
 import fetch from 'node-fetch';
 import Handlebars from 'handlebars';
 
@@ -69,96 +68,6 @@ async function queryUserStats(username, token) {
   return gqlResponse.data.user;
 }
 
-async function getLanguagesFromTree(owner, repo, token, excludePath = null) {
-  try {
-    const repoResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
-      headers: {
-        'Authorization': `token ${token}`,
-        'User-Agent': 'JavaScript GitHub README Generator',
-      },
-    });
-    const repoData = await repoResponse.json();
-    const branch = repoData.default_branch;
-
-    const treeResponse = await fetch(
-      `https://api.github.com/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`,
-      {
-        headers: {
-          'Authorization': `token ${token}`,
-          'User-Agent': 'JavaScript GitHub README Generator',
-        },
-      }
-    );
-    const treeData = await treeResponse.json();
-
-    const languages = {};
-    const excludePaths = Array.isArray(excludePath) ? excludePath : (excludePath ? [excludePath] : []);
-
-    for (const item of treeData.tree || []) {
-      let shouldExclude = false;
-      for (const exclude of excludePaths) {
-        if (item.path.startsWith(exclude + '/') || item.path === exclude) {
-          shouldExclude = true;
-          break;
-        }
-      }
-      if (shouldExclude) {
-        continue;
-      }
-
-      if (item.type === 'blob') {
-        const fileResponse = await fetch(item.url, {
-          headers: {
-            'Authorization': `token ${token}`,
-            'User-Agent': 'JavaScript GitHub README Generator',
-          },
-        });
-        const fileData = await fileResponse.json();
-        const size = fileData.size || 0;
-
-        const filename = item.path.split('/').pop();
-        const extension = path.extname(filename);
-        
-        if (extension && size > 0) {
-          const langMap = {
-            '.js': 'JavaScript',
-            '.ts': 'TypeScript',
-            '.py': 'Python',
-            '.java': 'Java',
-            '.cpp': 'C++',
-            '.c': 'C',
-            '.cs': 'C#',
-            '.rb': 'Ruby',
-            '.go': 'Go',
-            '.rs': 'Rust',
-            '.php': 'PHP',
-            '.swift': 'Swift',
-            '.kt': 'Kotlin',
-            '.scala': 'Scala',
-            '.r': 'R',
-            '.m': 'Objective-C',
-            '.jsx': 'JavaScript',
-            '.tsx': 'TypeScript',
-            '.vue': 'Vue',
-            '.html': 'HTML',
-            '.css': 'CSS',
-            '.scss': 'SCSS',
-            '.less': 'Less',
-          };
-          
-          const lang = langMap[extension] || extension.substring(1).toUpperCase();
-          languages[lang] = (languages[lang] || 0) + size;
-        }
-      }
-    }
-
-    return languages;
-  } catch (error) {
-    console.error(`Error getting languages for ${owner}/${repo}:`, error.message);
-    return {};
-  }
-}
-
 const EXCLUDED_REPOS = new Set([
   'oar-internal',
   'oar-internal-Installer',
@@ -167,6 +76,11 @@ const EXCLUDED_REPOS = new Set([
   'xenon-cheats',
   'MelonLoader',
   'Idk-bro',
+  'Blitz-Tag-Lib',
+]);
+
+const EXCLUDED_OWNERS = new Set([
+  'awesomekittycat68',
 ]);
 
 async function fetchLanguagesForRepos(repos, token) {
@@ -177,6 +91,7 @@ async function fetchLanguagesForRepos(repos, token) {
         const topics = repo.topics || [];
         if (topics.includes('mirror') || topics.includes('no-stats')) return false;
         if (EXCLUDED_REPOS.has(repo.name)) return false;
+        if (EXCLUDED_OWNERS.has(repo.owner?.login)) return false;
         return true;
       })
       .map(async (repo) => {
@@ -214,7 +129,7 @@ async function fetchLanguagesForRepos(repos, token) {
   return languagePercentages;
 }
 
-async function calculateLanguageStats(username, token) {
+async function calculateLanguageStats(token) {
   let allRepos = [];
   let page = 1;
 
@@ -282,60 +197,6 @@ function formatTopRepos(repos, includeArchived = true) {
     }));
 }
 
-async function fetchTopReposByLanguage(username, token) {
-  let allRepos = [];
-  let page = 1;
-
-  while (true) {
-    const url = `https://api.github.com/user/repos?type=all&per_page=100&page=${page}`;
-    const response = await fetch(url, {
-      headers: {
-        'Authorization': `token ${token}`,
-        'User-Agent': 'JavaScript GitHub README Generator',
-      },
-    });
-    const repos = await response.json();
-    if (!Array.isArray(repos) || repos.length === 0) break;
-    allRepos = allRepos.concat(repos);
-    page++;
-  }
-
-  const byLanguage = {};
-  for (const repo of allRepos) {
-    if (repo.fork) continue;
-    if (EXCLUDED_REPOS.has(repo.name)) continue;
-    const lang = repo.language || 'Unknown';
-    if (!byLanguage[lang]) byLanguage[lang] = [];
-    byLanguage[lang].push(repo);
-  }
-
-  const topByLang = {};
-  for (const [lang, repos] of Object.entries(byLanguage)) {
-    const sorted = repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
-    topByLang[lang] = sorted.slice(0, 3).map(r => ({
-      name: r.name,
-      stars: r.stargazers_count,
-      description: r.description || 'No description',
-      url: r.html_url,
-    }));
-  }
-
-  return topByLang;
-}
-
-function logTopReposByLanguage(topByLang) {
-  const langs = Object.keys(topByLang).sort();
-  console.log('\n=== Top Repos by Language ===\n');
-  for (const lang of langs) {
-    console.log(`📦 ${lang}`);
-    for (const repo of topByLang[lang]) {
-      const stars = repo.stars > 0 ? ` ⭐ ${repo.stars}` : '';
-      console.log(`   • ${repo.name}${stars} — ${repo.description}`);
-      console.log(`     ${repo.url}`);
-    }
-    console.log('');
-  }
-}
 
 const config = {
   showPrivateLanguages: false,
@@ -353,9 +214,7 @@ async function main() {
     }
 
     const userStats = await queryUserStats(username, token);
-    const languageStats = await calculateLanguageStats(username, token);
-    const topReposByLanguage = await fetchTopReposByLanguage(username, token);
-    logTopReposByLanguage(topReposByLanguage);
+    const languageStats = await calculateLanguageStats(token);
 
     const totalStars = userStats.repositories.nodes.reduce(
       (sum, repo) => sum + repo.stargazerCount,
