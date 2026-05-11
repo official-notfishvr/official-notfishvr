@@ -286,6 +286,60 @@ function formatTopRepos(repos, includeArchived = true) {
     }));
 }
 
+async function fetchTopReposByLanguage(username, token) {
+  let allRepos = [];
+  let page = 1;
+
+  while (true) {
+    const url = `https://api.github.com/users/${username}/repos?type=owner&per_page=100&page=${page}`;
+    const response = await fetch(url, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'User-Agent': 'JavaScript GitHub README Generator',
+      },
+    });
+    const repos = await response.json();
+    if (!Array.isArray(repos) || repos.length === 0) break;
+    allRepos = allRepos.concat(repos);
+    page++;
+  }
+
+  const byLanguage = {};
+  for (const repo of allRepos) {
+    if (repo.fork) continue;
+    const lang = repo.language || 'Unknown';
+    if (!byLanguage[lang]) byLanguage[lang] = [];
+    byLanguage[lang].push(repo);
+  }
+
+  const topByLang = {};
+  for (const [lang, repos] of Object.entries(byLanguage)) {
+    const sorted = repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+    topByLang[lang] = sorted.slice(0, 3).map(r => ({
+      name: r.name,
+      stars: r.stargazers_count,
+      description: r.description || 'No description',
+      url: r.html_url,
+    }));
+  }
+
+  return topByLang;
+}
+
+function logTopReposByLanguage(topByLang) {
+  const langs = Object.keys(topByLang).sort();
+  console.log('\n=== Top Repos by Language ===\n');
+  for (const lang of langs) {
+    console.log(`📦 ${lang}`);
+    for (const repo of topByLang[lang]) {
+      const stars = repo.stars > 0 ? ` ⭐ ${repo.stars}` : '';
+      console.log(`   • ${repo.name}${stars} — ${repo.description}`);
+      console.log(`     ${repo.url}`);
+    }
+    console.log('');
+  }
+}
+
 const config = {
   showPrivateLanguages: false,
   showApiCards: false,
@@ -303,6 +357,8 @@ async function main() {
 
     const userStats = await queryUserStats(username, token);
     const languageStats = await calculateLanguageStats(username, token);
+    const topReposByLanguage = await fetchTopReposByLanguage(username, token);
+    logTopReposByLanguage(topReposByLanguage);
 
     const totalStars = userStats.repositories.nodes.reduce(
       (sum, repo) => sum + repo.stargazerCount,
