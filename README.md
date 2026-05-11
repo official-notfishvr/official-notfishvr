@@ -7,7 +7,7 @@
 
 #### My Stats
 - **143** stars across repos
-- **792** commits this year
+- **794** commits this year
 - **93** total pull requests
 - **59** total issues
 - **54** repos contributed to
@@ -15,14 +15,14 @@
 #### Top Languages
 
 ```
-C++             █████████░ 86.73%
-C#              █░░░░░░░░░ 8.67%
-TypeScript      ░░░░░░░░░░ 2.79%
-Java            ░░░░░░░░░░ 1.04%
-Kotlin          ░░░░░░░░░░ 0.24%
-JavaScript      ░░░░░░░░░░ 0.22%
-HTML            ░░░░░░░░░░ 0.09%
-CSS             ░░░░░░░░░░ 0.09%
+C#              ██████░░░░ 64.54%
+TypeScript      ██░░░░░░░░ 20.80%
+Java            █░░░░░░░░░ 7.73%
+Kotlin          ░░░░░░░░░░ 1.81%
+JavaScript      ░░░░░░░░░░ 1.59%
+C++             ░░░░░░░░░░ 1.33%
+HTML            ░░░░░░░░░░ 0.68%
+CSS             ░░░░░░░░░░ 0.68%
 ```
 
 
