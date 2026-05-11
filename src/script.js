@@ -1,5 +1,6 @@
 // copyed form https://github.com/ptrpaws lol
 import fs from 'fs';
+import path from 'path';
 import fetch from 'node-fetch';
 import Handlebars from 'handlebars';
 
@@ -91,7 +92,6 @@ async function getLanguagesFromTree(owner, repo, token, excludePath = null) {
     const treeData = await treeResponse.json();
 
     const languages = {};
-    const ext = require('path').extname;
     const excludePaths = Array.isArray(excludePath) ? excludePath : (excludePath ? [excludePath] : []);
 
     for (const item of treeData.tree || []) {
@@ -117,7 +117,7 @@ async function getLanguagesFromTree(owner, repo, token, excludePath = null) {
         const size = fileData.size || 0;
 
         const filename = item.path.split('/').pop();
-        const extension = ext(filename);
+        const extension = path.extname(filename);
         
         if (extension && size > 0) {
           const langMap = {
@@ -177,14 +177,6 @@ async function fetchLanguagesForRepos(repos, token) {
       })
       .map(async (repo) => {
         try {
-          if (repo.name === 'oar-internal') {
-            return await getLanguagesFromTree('official-notfishvr', 'oar-internal', token, 'OARDump');
-          }
-
-          if (repo.name === 'Meta-Horizon-Cheats') {
-            return await getLanguagesFromTree('official-notfishvr', 'Meta-Horizon-Cheats', token, ['MelonLoader', 'xenon-cheats', 'xenon-cheats-universalx']);
-          }
-
           const response = await fetch(repo.languages_url, {
             headers: {
               'Authorization': `token ${token}`,
