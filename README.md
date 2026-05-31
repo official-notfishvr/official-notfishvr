@@ -15,10 +15,10 @@
 #### Top Languages
 
 ```
-C#              ██████░░░░ 62.41%
-TypeScript      ██░░░░░░░░ 22.65%
-Java            █░░░░░░░░░ 7.58%
-C++             ░░░░░░░░░░ 2.07%
+C#              ██████░░░░ 62.49%
+TypeScript      ██░░░░░░░░ 22.55%
+Java            █░░░░░░░░░ 7.59%
+C++             ░░░░░░░░░░ 2.08%
 Kotlin          ░░░░░░░░░░ 1.70%
 JavaScript      ░░░░░░░░░░ 1.49%
 CSS             ░░░░░░░░░░ 0.66%
@@ -48,4 +48,4 @@ HTML            ░░░░░░░░░░ 0.64%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-05-30 UTC_
+_Last updated 2026-05-31 UTC_
