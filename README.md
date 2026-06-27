@@ -9,14 +9,14 @@
 - **149** stars across repos
 - **1.3k** commits this year
 - **95** total pull requests
-- **58** total issues
+- **57** total issues
 - **52** repos contributed to
 
 #### Top Languages
 
 ```
-C#              ██████░░░░ 62.51%
-TypeScript      ██░░░░░░░░ 22.42%
+C#              ██████░░░░ 62.53%
+TypeScript      ██░░░░░░░░ 22.40%
 Java            █░░░░░░░░░ 7.68%
 C++             ░░░░░░░░░░ 2.08%
 Kotlin          ░░░░░░░░░░ 1.70%
@@ -48,4 +48,4 @@ HTML            ░░░░░░░░░░ 0.64%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-06-26 UTC_
+_Last updated 2026-06-27 UTC_
