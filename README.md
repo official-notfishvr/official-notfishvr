@@ -6,11 +6,11 @@
 
 
 #### My Stats
-- **150** stars across repos
-- **706** commits this year
-- **92** total pull requests
+- **149** stars across repos
+- **707** commits this year
+- **93** total pull requests
 - **54** total issues
-- **46** repos contributed to
+- **47** repos contributed to
 
 #### Top Languages
 
@@ -33,7 +33,7 @@ CSS             ░░░░░░░░░░ 0.46%
   - No description
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
-- **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 13
+- **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 12
   - a UnityEngine GUI lib for C# modding using mod loaders
 - **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 7
   - tools
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.46%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-07-23 UTC_
+_Last updated 2026-07-24 UTC_
