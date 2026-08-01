@@ -6,11 +6,11 @@
 
 
 #### My Stats
-- **149** stars across repos
-- **714** commits this year
+- **148** stars across repos
+- **715** commits this year
 - **93** total pull requests
-- **54** total issues
-- **46** repos contributed to
+- **55** total issues
+- **47** repos contributed to
 
 #### Top Languages
 
@@ -29,7 +29,7 @@ CSS             ░░░░░░░░░░ 0.46%
 #### Top Repositories
 - **[Fish-Lethal-Company-Menu](https://github.com/official-notfishvr/Fish-Lethal-Company-Menu)** ⭐ 39
   - This Is Lethal Company Mod Menu
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 22
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 21
   - No description
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.46%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-07-31 UTC_
+_Last updated 2026-08-01 UTC_
