@@ -6,8 +6,8 @@
 
 
 #### My Stats
-- **148** stars across repos
-- **734** commits this year
+- **149** stars across repos
+- **735** commits this year
 - **93** total pull requests
 - **54** total issues
 - **42** repos contributed to
@@ -35,7 +35,7 @@ CSS             ░░░░░░░░░░ 0.46%
   - This Is A BepInEx Mod Installer For Lethal Company
 - **[shadcn-ui](https://github.com/official-notfishvr/shadcn-ui)** ⭐ 12
   - a UnityEngine GUI lib for C# modding using mod loaders
-- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 7
+- **[Fish-Tools](https://github.com/official-notfishvr/Fish-Tools)** ⭐ 8
   - tools
 
 #### Links
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.46%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-08-09 UTC_
+_Last updated 2026-08-10 UTC_
