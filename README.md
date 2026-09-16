@@ -6,8 +6,8 @@
 
 
 #### My Stats
-- **155** stars across repos
-- **875** commits this year
+- **154** stars across repos
+- **877** commits this year
 - **93** total pull requests
 - **55** total issues
 - **38** repos contributed to
@@ -15,12 +15,12 @@
 #### Top Languages
 
 ```
-C#              ████████░░ 79.69%
-TypeScript      █░░░░░░░░░ 6.23%
+C#              ████████░░ 79.54%
+TypeScript      █░░░░░░░░░ 6.21%
 C++             ░░░░░░░░░░ 3.38%
-Java            ░░░░░░░░░░ 3.28%
+Java            ░░░░░░░░░░ 3.27%
 Kotlin          ░░░░░░░░░░ 2.62%
-JavaScript      ░░░░░░░░░░ 2.02%
+JavaScript      ░░░░░░░░░░ 2.21%
 HTML            ░░░░░░░░░░ 0.90%
 CSS             ░░░░░░░░░░ 0.52%
 ```
@@ -29,7 +29,7 @@ CSS             ░░░░░░░░░░ 0.52%
 #### Top Repositories
 - **[Fish-Lethal-Company-Menu](https://github.com/official-notfishvr/Fish-Lethal-Company-Menu)** ⭐ 39
   - This Is Lethal Company Mod Menu
-- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 27
+- **[Armdot-DeObfuscator](https://github.com/official-notfishvr/Armdot-DeObfuscator)** ⭐ 26
   - No description
 - **[Lethal-Company-BepInEx-Installer](https://github.com/official-notfishvr/Lethal-Company-BepInEx-Installer)** ⭐ 13
   - This Is A BepInEx Mod Installer For Lethal Company
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.52%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-09-15 UTC_
+_Last updated 2026-09-16 UTC_
