@@ -10,16 +10,16 @@
 - **1.0k** commits this year
 - **95** total pull requests
 - **56** total issues
-- **31** repos contributed to
+- **32** repos contributed to
 
 #### Top Languages
 
 ```
-C#              █████████░ 85.53%
-Kotlin          ░░░░░░░░░░ 3.56%
+C#              █████████░ 85.55%
+Kotlin          ░░░░░░░░░░ 3.55%
 Java            ░░░░░░░░░░ 2.79%
-TypeScript      ░░░░░░░░░░ 2.73%
-JavaScript      ░░░░░░░░░░ 1.91%
+TypeScript      ░░░░░░░░░░ 2.72%
+JavaScript      ░░░░░░░░░░ 1.90%
 C++             ░░░░░░░░░░ 1.66%
 HTML            ░░░░░░░░░░ 0.69%
 CSS             ░░░░░░░░░░ 0.39%
@@ -48,4 +48,4 @@ CSS             ░░░░░░░░░░ 0.39%
   <p>If you'd like to support my work, consider starring my projects!</p>
 </div>
 
-_Last updated 2026-11-23 UTC_
+_Last updated 2026-11-24 UTC_
